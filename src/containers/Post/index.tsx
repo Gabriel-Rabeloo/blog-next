@@ -6,6 +6,7 @@ import { Footer } from '../../components/Footer';
 import { Heading } from '../../components/Heading';
 import { PostDetails } from '../../components/PostDetails';
 import { PostContainer } from '../../components/PostContainer';
+import { Comments } from '../../Comments/';
 
 export type PostPros = {
   post: PostData;
@@ -26,6 +27,7 @@ export const Post = ({ post }: PostPros) => {
         />
         <PostContainer content={post.content} />
       </MainContainer>
+      <Comments slug={post.slug} title={post.title} />
       <Footer />
     </>
   );
