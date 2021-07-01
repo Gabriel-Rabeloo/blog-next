@@ -26,8 +26,8 @@ export const Post = ({ post }: PostPros) => {
           date={post.created_at}
         />
         <PostContainer content={post.content} />
+        <Comments slug={post.slug} title={post.title} />
       </MainContainer>
-      <Comments slug={post.slug} title={post.title} />
       <Footer />
     </>
   );
