@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { PostData } from '../../domain/posts/post';
 import { PostCover } from '../../components/PostCover';
 import { Header } from '../../components/Header';
@@ -7,6 +8,8 @@ import { Heading } from '../../components/Heading';
 import { PostDetails } from '../../components/PostDetails';
 import { PostContainer } from '../../components/PostContainer';
 import { Comments } from '../../Comments/';
+import { SITE_NAME } from '../../config/app-config';
+import { removeHtml } from '../../utils/remove-html';
 
 export type PostPros = {
   post: PostData;
@@ -15,6 +18,15 @@ export type PostPros = {
 export const Post = ({ post }: PostPros) => {
   return (
     <>
+      <Head>
+        <title>
+          {post.title} - {SITE_NAME}
+        </title>
+        <meta
+          name="description"
+          content={removeHtml(post.content).slice(0, 150)}
+        />
+      </Head>
       <Header />
 
       <MainContainer>
