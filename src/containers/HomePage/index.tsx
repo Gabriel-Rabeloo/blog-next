@@ -16,7 +16,7 @@ export default function HomePage({ posts }: HomePageProps) {
     <>
       <Head>
         <title>{SITE_NAME}</title>
-        <meta name="description" content="Este é meu blog" />
+        <meta name="description" content="Este é meu blog para estudos" />
       </Head>
       <Header />
       <MainContainer>
