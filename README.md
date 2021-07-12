@@ -1,4 +1,4 @@
-This is a blog using this [API](https://github.com/Gabriel-Rabeloo/api-strapi) and [Next.js](https://nextjs.org/) with Static Generation.
+This is a blog using this [API](https://github.com/Gabriel-Rabeloo/api-strapi) and [Next.js](https://nextjs.org/) with Static Generation and Server-side Rendering.
 
 You can view this project on [Netlify](https://gabriel-blog-next.netlify.app/) 
 
