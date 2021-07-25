@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 {
     "cSpell.words": [
         "meublog",
         "vercel"
     ]
+=======
+{
+    "cSpell.words": [
+        "meublog",
+        "postbuild",
+        "vercel"
+    ]
+>>>>>>> 9be8f0155832c0dfaf2d9346abdf1d8cb4298eda
 }
